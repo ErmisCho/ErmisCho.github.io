@@ -1,7 +1,7 @@
 export const siteMeta = {
-  title: 'Python Backend / AI Engineer',
+  title: 'Python AI Engineer',
   description:
-    'Backend / AI Engineer specializing in Python backend systems, retrieval and search platforms, RAG pipelines, asynchronous processing, and production-grade backend services. Based in Vienna.',
+    'Python AI Engineer specializing in RAG, semantic search, FastAPI services, asynchronous ingestion pipelines, and reliable AI-backed backend systems. Based in Vienna.',
 };
 
 export const navigation = [
@@ -14,25 +14,25 @@ export const navigation = [
 
 export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
-  role: 'Backend / AI Engineer',
+  role: 'Python AI Engineer',
   techStack:
-    'Python • FastAPI • Retrieval & Search Systems • Async Processing • Docker • Kubernetes • Elasticsearch / OpenSearch',
+    'Python • FastAPI • RAG • Semantic Search • Async Processing • Docker • Kubernetes • Elasticsearch / OpenSearch',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
       label: 'AI Engineer CV',
-      href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/latest/download/Ermis-Chorinopoulos-CV-AI-Engineer-English.pdf',
+      href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/download/cv/Ermis-Chorinopoulos-CV-AI-Engineer-English.pdf',
       icon: 'fas fa-file-pdf',
       className: 'action-btn',
-      ariaLabel: 'Download English CV (Backend / AI Engineer)',
+      ariaLabel: 'Download English AI Engineer CV',
       external: true,
     },
     {
       label: 'AI Engineer Lebenslauf',
-      href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/latest/download/Ermis-Chorinopoulos-CV-AI-Engineer-Deutsch.pdf',
+      href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/download/cv/Ermis-Chorinopoulos-CV-AI-Engineer-Deutsch.pdf',
       icon: 'fas fa-file-pdf',
       className: 'action-btn',
-      ariaLabel: 'Download German CV (Backend / AI Engineer)',
+      ariaLabel: 'Download German AI Engineer CV',
       external: true,
     },
     {
@@ -70,18 +70,18 @@ export const hero = {
 };
 
 export const profile =
-  'Backend / AI engineer focused on Python services and production-grade backend systems with AI functionality. Experience building retrieval and search systems, asynchronous processing workflows, and FastAPI-based services with clear system boundaries, emphasizing reliability, maintainability, and containerized deployments with Docker and Kubernetes.';
+  'Python-focused AI engineer based in Vienna with strong backend foundations and hands-on experience building RAG, semantic search, and AI-backed document search systems. Experienced in FastAPI services, asynchronous ingestion pipelines, retrieval workflows, and data processing components with a strong focus on reliability, maintainability, and clear service boundaries.';
 
 export const experience = [
   {
-    title: 'Software Engineer (Python)',
-    organization: 'Independent AI & Backend Engineering (Projects & Freelance Work)',
+    title: 'Python AI Engineer (Project-Based)',
+    organization: 'Independent AI & Backend Engineering',
     date: 'Oct 2025 – Present',
     location: 'Vienna, Austria',
     highlights: [
-      'Built production-grade backend systems for document processing, semantic search, and retrieval-based workflows.',
-      'Developed FastAPI services for file upload, processing orchestration, retrieval, and job status handling.',
-      'Used queue-based architectures with RabbitMQ and Redis to support background processing and improve service reliability.',
+      'Designed FastAPI-based services for RAG, retrieval workflows, and data pipelines, separating API responsibilities from background processing.',
+      'Built asynchronous ingestion workflows with RabbitMQ and Redis, enabling background processing, job tracking, retries, and failure isolation.',
+      'Developed ingestion pipelines covering crawling, transformation, chunking, embedding, and indexing for AI-search workloads.',
     ],
   },
   {
@@ -90,25 +90,26 @@ export const experience = [
     date: 'May 2025 – Sep 2025',
     location: 'Vienna, Austria',
     highlights: [
-      'Designed and operated backend services and ingestion pipelines for RAG-based document search and semantic retrieval across large document collections.',
+      'Improved reliability of document ingestion and processing pipelines in a retrieval-based AI search system, stabilizing downstream search behavior.',
+      'Integrated Elasticsearch/OpenSearch into the retrieval stack and connected RAG APIs with containerized backend services.',
     ],
   },
   {
     title: 'Software Engineer',
-    organization: 'Kapsch (Backend Reliability)',
+    organization: 'Kapsch TrafficCom AG',
     date: 'Sep 2023 – Mar 2024',
     location: 'Vienna, Austria',
     highlights: [
-      'Improved observability and performance diagnostics of production backend systems through automated monitoring, structured testing, and CPU/memory profiling.',
+      'Improved reliability of backend systems through Python-based automation, performance measurement, structured testing, and CPU/memory analysis.',
     ],
   },
   {
     title: 'Software Engineer',
-    organization: 'Huawei (Platform Engineering)',
+    organization: 'Huawei',
     date: 'Aug 2021 – Aug 2023',
     location: 'Budapest, Hungary',
     highlights: [
-      'Built and scaled Python and Java backend services integrating internal enterprise systems, designing APIs and data models for data-driven workflows.',
+      'Built backend automation tools integrating Python and Java services, reducing manual operational effort and supporting data-driven workflows under evolving requirements.',
     ],
   },
   {
@@ -124,8 +125,17 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'End-to-End RAG Pipeline',
+    tags: ['Python', 'FastAPI', 'RabbitMQ', 'Redis', 'Pinecone'],
+    highlights: [
+      'Built an asynchronous RAG pipeline using FastAPI, RabbitMQ, and Redis for crawling, chunking, embedding, indexing, and job tracking.',
+      'Decoupled ingestion from retrieval APIs so expensive crawl and indexing work does not block user-facing search and Q&A requests.',
+    ],
+    href: 'https://github.com/ErmisCho/rag-pipeline',
+  },
+  {
     title: 'Agentic RAG System',
-    tags: ['Python', 'LangGraph', 'Elasticsearch'],
+    tags: ['Python', 'LangGraph', 'LangChain'],
     highlights: [
       'Designed an agentic Python architecture with explicit control flow and intelligent routing between vector search and web fallback.',
       'Implemented evaluation layers, retries, and data guardrails to ensure answer reliability and operational predictability.',
@@ -133,20 +143,11 @@ export const projects = [
     href: 'https://github.com/ErmisCho/agentic-rag',
   },
   {
-    title: 'End-to-End RAG Pipeline',
-    tags: ['Python', 'FastAPI', 'Pinecone'],
-    highlights: [
-      'Built an asynchronous ingestion pipeline using FastAPI, RabbitMQ, and Redis for web crawling, recursive chunking, batch embeddings, and vector indexing.',
-      'Deployed a conversational interface featuring semantic reranking, citations, detailed logging, and evidence-based guardrails.',
-    ],
-    href: 'https://github.com/ErmisCho/rag-pipeline',
-  },
-  {
     title: 'Backend Optimization Project',
-    tags: ['Django', 'PostgreSQL', 'Rest Framework'],
+    tags: ['Django', 'PostgreSQL', 'Django REST Framework'],
     highlights: [
       'Optimized a Django/PostgreSQL API by resolving N+1 query bottlenecks, introducing tailored indexes, and using bulk operations.',
-      'Reduced API latency by up to 21% and improved maintainability through targeted query optimization, automated tests, and clearer technical documentation.',
+      'Improved maintainability through targeted query optimization, automated tests, and clearer technical documentation.',
     ],
     href: 'https://github.com/ErmisCho/crm-backend-optimization',
   },
@@ -154,7 +155,7 @@ export const projects = [
     title: 'E-commerce Platform for Swiss Startup',
     tags: ['Python', 'Django', 'PostgreSQL'],
     highlights: [
-      'Developed a Django-based e-commerce backend for a small business preparing to launch in Switzerland. Implemented product catalog management, shopping cart workflows, administrative functionality, and backend configuration for order handling.',
+      'Developed a Django-based e-commerce backend for a small business preparing to launch in Switzerland, covering product catalog management, shopping cart workflows, admin functionality, and order-handling configuration.',
     ],
     href: 'https://github.com/ErmisCho/webshop',
   },
@@ -162,7 +163,7 @@ export const projects = [
     title: 'Content Platform / Blog CMS',
     tags: ['Python', 'Django', 'PostgreSQL'],
     highlights: [
-      'Built a Django-based content management platform using Wagtail to support editorial content and marketing pages. Implemented structured content models, article publishing, rich text editing, media handling, and administrative configuration.',
+      'Built a Wagtail-based Django content platform for editorial and marketing pages, including structured content models, article publishing, rich text editing, media handling, and admin configuration.',
     ],
     href: 'https://github.com/ErmisCho/lux-journal-cms',
   },
@@ -170,9 +171,9 @@ export const projects = [
 
 export const skills = [
   {
-    title: 'AI & Search',
+    title: 'Python AI Engineering',
     icon: 'fas fa-brain',
-    items: ['Retrieval-Augmented Generation (RAG)', 'Semantic Search', 'LangChain', 'LangGraph'],
+    items: ['RAG', 'Semantic Search', 'LangChain', 'LangGraph', 'LLM Integration', 'Evaluation', 'Guardrails'],
   },
   {
     title: 'Backend',
@@ -187,7 +188,7 @@ export const skills = [
   {
     title: 'Cloud & Ops',
     icon: 'fas fa-cloud',
-    items: ['Docker', 'Kubernetes', 'AWS', 'Linux', 'Git'],
+    items: ['Docker', 'Kubernetes environments', 'AWS basics', 'Linux', 'Git'],
   },
 ];
 
@@ -199,8 +200,8 @@ export const education = {
 };
 
 export const languages = [
-  { name: 'German', level: 'Professional (B2, C1 in progress)', progress: 80 },
-  { name: 'English', level: 'Full Professional / Daily Working', progress: 100 },
+  { name: 'German', level: 'Professional working proficiency (B2 course completed, C1 course in progress)', progress: 80 },
+  { name: 'English', level: 'C2 certified, full professional proficiency', progress: 100 },
   { name: 'Greek', level: 'Native', progress: 100 },
-  { name: 'Chinese', level: 'Upper-intermediate', progress: 60 },
+  { name: 'Chinese', level: 'Intermediate, used in professional context', progress: 60 },
 ];
