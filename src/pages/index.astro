@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import profileImage from '../../assets/images/profile.jpg';
+import {
+  education,
+  experience,
+  hero,
+  languages,
+  navigation,
+  profile,
+  projects,
+  skills,
+} from '../data/homepage';
+---
+
+<BaseLayout>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <nav class="glass-nav">
+    <ul>
+      {navigation.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="hero section-reveal">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <h1 class="gradient-text">{hero.name[0]}<br />{hero.name[1]}</h1>
+          <h2 class="role-title">{hero.role}</h2>
+          <p class="tech-stack-hero">{hero.techStack}</p>
+
+          <div class="contact-info">
+            {
+              hero.contacts.map((contact) =>
+                contact.disabled ? (
+                  <span class="contact-link disabled">
+                    <i class={contact.icon}></i> {contact.label}
+                  </span>
+                ) : (
+                  <a
+                    href={contact.href}
+                    target={contact.external ? '_blank' : undefined}
+                    rel={contact.external ? 'noopener' : undefined}
+                    class:list={['contact-link', contact.className]}
+                    aria-label={contact.ariaLabel}
+                  >
+                    <i class={contact.icon}></i> {contact.label}
+                  </a>
+                )
+              )
+            }
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <img src={profileImage.src} alt={hero.imageAlt} class="hero-image" />
+        </div>
+      </div>
+    </header>
+
+    <section id="profile" class="glass-card section-reveal">
+      <h3 class="section-title">Profile</h3>
+      <p>{profile}</p>
+    </section>
+
+    <section id="experience" class="section-reveal">
+      <h3 class="section-title">Professional Experience</h3>
+
+      <div class="timeline">
+        {
+          experience.map((item) => (
+            <div class="timeline-item glass-card card-hover">
+              <div class="timeline-header">
+                <div>
+                  <h4>{item.title}</h4>
+                  <h5>{item.organization}</h5>
+                </div>
+                <div class="timeline-meta">
+                  <span class="date">{item.date}</span>
+                  <span class="location">{item.location}</span>
+                </div>
+              </div>
+              <ul>
+                {item.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="projects" class="section-reveal">
+      <div class="section-header-group">
+        <h3 class="section-title">Selected Projects & Independent Work</h3>
+      </div>
+
+      <div class="projects-grid">
+        {
+          projects.map((project) => (
+            <div class="project-card glass-card card-hover">
+              <div class="project-header">
+                <h4>{project.title}</h4>
+                <div class="tech-stack">
+                  {project.tags.map((tag) => <span class="tech-tag">{tag}</span>)}
+                </div>
+              </div>
+              <ul>
+                {project.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
+              <div class="project-links">
+                <a href={project.href} target="_blank" rel="noopener" class="github-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="skills" class="section-reveal">
+      <h3 class="section-title">Technical Skills</h3>
+
+      <div class="skills-grid">
+        {
+          skills.map((category) => (
+            <div class="skill-category glass-card">
+              <h4><i class={category.icon}></i> {category.title}</h4>
+              <div class="skill-tags">
+                {category.items.map((item) => <span class="skill-tag">{item}</span>)}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="education" class="section-reveal">
+      <div class="split-section">
+        <div>
+          <h3 class="section-title">Education</h3>
+          <div class="glass-card card-hover">
+            <div class="timeline-header">
+              <div>
+                <h4>{education.title}</h4>
+                <h5>{education.organization}</h5>
+              </div>
+              <div class="timeline-meta">
+                <span class="date">{education.date}</span>
+                <span class="location">{education.location}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-title">Languages</h3>
+          <div class="glass-card language-card">
+            {
+              languages.map((language) => (
+                <div class="language-item">
+                  <span class="lang-name">{language.name}</span>
+                  <span class="lang-level">{language.level}</span>
+                  <div class="progress-bar">
+                    <div class="progress" style={`width: ${language.progress}%`}></div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Ermis Chorinopoulos</p>
+    </footer>
+  </main>
+</BaseLayout>

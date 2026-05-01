@@ -1,0 +1,105 @@
+---
+import '../styles/global.css';
+
+import appleTouchIcon from '../../assets/favicon/apple-touch-icon.png';
+import favicon16 from '../../assets/favicon/favicon-16x16.png';
+import favicon32 from '../../assets/favicon/favicon-32x32.png';
+import faviconIco from '../../assets/favicon/favicon.ico';
+import { siteMeta } from '../data/homepage';
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = siteMeta.title,
+  description = siteMeta.description,
+} = Astro.props;
+
+const assetHref = (asset: string | { src: string }) => (typeof asset === 'string' ? asset : asset.src);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="icon" type="image/x-icon" href={assetHref(faviconIco)} />
+    <link rel="icon" type="image/png" sizes="32x32" href={assetHref(favicon32)} />
+    <link rel="icon" type="image/png" sizes="16x16" href={assetHref(favicon16)} />
+    <link rel="apple-touch-icon" href={assetHref(appleTouchIcon)} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <slot />
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const revealElements = document.querySelectorAll('.section-reveal');
+
+        const revealCallback = (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -50px 0px',
+        });
+
+        revealElements.forEach((el) => revealObserver.observe(el));
+
+        const progressBars = document.querySelectorAll('.progress');
+        progressBars.forEach((bar) => {
+          bar.style.transform = 'scaleX(0)';
+        });
+
+        const progressCallback = (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const bars = entry.target.querySelectorAll('.progress');
+              bars.forEach((bar) => {
+                bar.style.transform = 'scaleX(1)';
+              });
+            }
+          });
+        };
+
+        const progressObserver = new IntersectionObserver(progressCallback, { threshold: 0.5 });
+        const languageSection = document.querySelector('.language-card');
+        if (languageSection) {
+          progressObserver.observe(languageSection);
+        }
+
+        const cards = document.querySelectorAll('.card-hover');
+        cards.forEach((card) => {
+          card.addEventListener('mousemove', (event) => {
+            const rect = card.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            card.style.setProperty('--mouse-x', `${x}px`);
+            card.style.setProperty('--mouse-y', `${y}px`);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

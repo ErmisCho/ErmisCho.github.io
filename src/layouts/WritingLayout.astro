@@ -1,0 +1,45 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+type Props = {
+  title: string;
+  description: string;
+  publishDate?: Date;
+  tags?: string[];
+};
+
+const { title, description, publishDate, tags = [] } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Ermis Chorinopoulos`} description={description}>
+  <main class="container writing-page">
+    <article class="glass-card">
+      <a class="back-link" href="/">Back to portfolio</a>
+      <header class="writing-header">
+        <h1>{title}</h1>
+        <p>{description}</p>
+        {
+          publishDate && (
+            <time datetime={publishDate.toISOString()}>
+              {publishDate.toLocaleDateString('en', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
+          )
+        }
+        {
+          tags.length > 0 && (
+            <div class="tech-stack">
+              {tags.map((tag) => <span class="tech-tag">{tag}</span>)}
+            </div>
+          )
+        }
+      </header>
+      <div class="writing-content">
+        <slot />
+      </div>
+    </article>
+  </main>
+</BaseLayout>

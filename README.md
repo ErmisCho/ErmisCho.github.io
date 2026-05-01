@@ -27,28 +27,58 @@ The site includes:
 ## Stack & Technologies
 
 **Frontend**
-- HTML5
+- Astro
+- TypeScript content/data files
 - CSS3
 - Vanilla JavaScript
 
 **Assets & Tooling**
+- Markdown content collections for future case studies and engineering notes
 - Python (utility script used to generate favicon assets)
 - FontAwesome (icons)
+
+## Development
+
+Install dependencies and start the local Astro server:
+
+```bash
+npm install
+npm run dev
+```
+
+Build the static site for GitHub Pages:
+
+```bash
+npm run build
+```
+
+Homepage content lives in `src/data/homepage.ts`. Future long-form writing can be added as Markdown files in `src/content/case-studies` or `src/content/notes`.
 
 ## Project Structure
 
 ```text
 .
-├── index.html
-├── styles.css
-├── scripts.js
+├── astro.config.mjs
+├── package.json
+├── src
+│   ├── content
+│   │   ├── case-studies
+│   │   └── notes
+│   ├── data
+│   │   └── homepage.ts
+│   ├── layouts
+│   │   ├── BaseLayout.astro
+│   │   └── WritingLayout.astro
+│   ├── pages
+│   │   ├── case-studies
+│   │   ├── notes
+│   │   └── index.astro
+│   └── styles
+│       └── global.css
 ├── assets
 │   ├── images
 │   │   ├── profile.jpg
 │   │   └── website_preview.png
-│   ├── cv
-│   │   ├── ermis-chorinopoulos-backend-ai-engineer-cv-en.pdf
-│   │   └── ermis-chorinopoulos-backend-ai-ingenieur-lebenslauf-de.pdf
 │   └── favicon
 │       ├── apple-touch-icon.png
 │       ├── apple-touch-icon.svg
