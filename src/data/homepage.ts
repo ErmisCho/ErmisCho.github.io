@@ -16,7 +16,7 @@ export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
   role: 'Python AI Engineer',
   techStack:
-    'Python • FastAPI • RAG • Semantic Search • Async Processing • Docker • Kubernetes • Elasticsearch / OpenSearch',
+    'Python • FastAPI • RAG • Semantic Search • Async Processing • Docker • Kubernetes Environments • Elasticsearch / OpenSearch',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -70,7 +70,7 @@ export const hero = {
 };
 
 export const profile =
-  'Python-focused AI engineer based in Vienna with strong backend foundations and hands-on experience building RAG, semantic search, and AI-backed document search systems. Experienced in FastAPI services, asynchronous ingestion pipelines, retrieval workflows, and data processing components with a strong focus on reliability, maintainability, and clear service boundaries.';
+  'Python-focused AI engineer based in Vienna with strong backend foundations and hands-on experience building RAG, semantic search, and AI-backed document search systems. Experienced in FastAPI services, asynchronous ingestion pipelines, retrieval workflows, and data processing components, with a strong focus on reliability, maintainability, and clear service boundaries.';
 
 export const experience = [
   {
@@ -90,8 +90,8 @@ export const experience = [
     date: 'May 2025 – Sep 2025',
     location: 'Vienna, Austria',
     highlights: [
-      'Improved reliability of document ingestion and processing pipelines in a retrieval-based AI search system, stabilizing downstream search behavior.',
-      'Integrated Elasticsearch/OpenSearch into the retrieval stack and connected RAG APIs with containerized backend services.',
+      'Owned and improved a RAG-based document search platform, balancing retrieval quality, ingestion reliability, performance, and operational complexity.',
+      'Improved document ingestion and indexing pipelines and integrated Elasticsearch/OpenSearch into the retrieval stack for AI-search workloads.',
     ],
   },
   {
@@ -109,16 +109,18 @@ export const experience = [
     date: 'Aug 2021 – Aug 2023',
     location: 'Budapest, Hungary',
     highlights: [
-      'Built backend automation tools integrating Python and Java services, reducing manual operational effort and supporting data-driven workflows under evolving requirements.',
+      'Owned internal automation tools integrating Python and Java services via APIs, reducing manual operational effort across teams.',
+      'Supported platform migration and schema changes through adaptable API and data-model integrations.',
     ],
   },
   {
     title: 'Software Engineer',
-    organization: 'Citibank (Security Data Systems)',
+    organization: 'Citibank',
     date: 'Jan 2019 – Aug 2021',
     location: 'Budapest, Hungary',
     highlights: [
-      'Developed data processing systems and workflows in Python, Java, and SQL to support vulnerability analysis and enterprise risk reporting.',
+      'Built backend tools in Python, Java, and SQL for CVE analysis, vulnerability threat management, and security-relevant enterprise workflows.',
+      'Developed PostgreSQL/MySQL-backed applications and SQL workflows supporting vulnerability, configuration, and risk analysis.',
     ],
   },
 ];
@@ -137,7 +139,7 @@ export const projects = [
     title: 'Agentic RAG System',
     tags: ['Python', 'LangGraph', 'LangChain'],
     highlights: [
-      'Designed an agentic Python architecture with explicit control flow and intelligent routing between vector search and web fallback.',
+      'Designed an agentic Python architecture with explicit control flow and tool routing to make retrieval and answer-generation steps more predictable.',
       'Implemented evaluation layers, retries, and data guardrails to ensure answer reliability and operational predictability.',
     ],
     href: 'https://github.com/ErmisCho/agentic-rag',
