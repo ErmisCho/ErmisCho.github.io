@@ -16,7 +16,7 @@ export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
   role: 'Python AI Engineer',
   techStack:
-    'Python • FastAPI • RAG • Semantic Search • Async Processing • Docker • Kubernetes Environments • Elasticsearch / OpenSearch',
+    'Python • FastAPI • RAG • Async Processing',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -185,7 +185,7 @@ export const skills = [
   {
     title: 'Data & Retrieval',
     icon: 'fas fa-database',
-    items: ['Elasticsearch / OpenSearch', 'Embeddings', 'Chunking', 'SQL'],
+    items: ['Elasticsearch / OpenSearch', 'Pinecone', 'PostgreSQL', 'SQL', 'Vector Search', 'Embeddings', 'Chunking'],
   },
   {
     title: 'Cloud & Ops',
