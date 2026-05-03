@@ -479,11 +479,13 @@ section {
 
 .skill-tags {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
 }
 
 .skill-tag {
+    width: fit-content;
     font-size: 0.85rem;
     padding: 0.4rem 1rem;
     background: var(--glass-bg);
