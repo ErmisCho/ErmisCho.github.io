@@ -19,19 +19,19 @@ export const hero = {
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
-      label: 'AI Engineer CV',
+      label: 'CV (English)',
       href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/download/cv/Ermis-Chorinopoulos-CV-AI-Engineer-English.pdf',
       icon: 'fas fa-file-pdf',
       className: 'action-btn',
-      ariaLabel: 'Download English AI Engineer CV',
+      ariaLabel: 'Download English CV',
       external: true,
     },
     {
-      label: 'AI Engineer Lebenslauf',
+      label: 'Lebenslauf (Deutsch)',
       href: 'https://github.com/ErmisCho/ErmisCho.github.io/releases/download/cv/Ermis-Chorinopoulos-CV-AI-Engineer-Deutsch.pdf',
       icon: 'fas fa-file-pdf',
       className: 'action-btn',
-      ariaLabel: 'Download German AI Engineer CV',
+      ariaLabel: 'Download German CV',
       external: true,
     },
     {
