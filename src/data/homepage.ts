@@ -15,8 +15,7 @@ export const navigation = [
 export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
   role: 'Python AI Engineer',
-  techStack:
-    'Python • FastAPI • RAG • Async Processing',
+  techStack: 'Python • FastAPI • RAG • Async Processing',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -168,6 +167,15 @@ export const projects = [
       'Built a Wagtail-based Django content platform for editorial and marketing pages, including structured content models, article publishing, rich text editing, media handling, and admin configuration.',
     ],
     href: 'https://github.com/ErmisCho/lux-journal-cms',
+  },
+  {
+    title: 'Population Data Pipeline',
+    tags: ['Python', 'ETL', 'Pandas', 'API'],
+    highlights: [
+      'Built a Python data pipeline that downloads World Bank GDP and population data, calculates GDP per capita and year-over-year changes, and uploads processed results through an external API.',
+      'Added configuration-based execution and logging to make the pipeline easier to run, inspect, and adapt.',
+    ],
+    href: 'https://github.com/ErmisCho/population-data-pipeline',
   },
 ];
 
