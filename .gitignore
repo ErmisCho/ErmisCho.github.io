@@ -2,3 +2,5 @@
 .codex
 dist/
 node_modules/
+.orchestrator/
+PORTFOLIO.md
