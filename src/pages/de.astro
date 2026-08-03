@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  lang="de"
+  title="Ermis Chorinopoulos | Senior AI Engineer, Wien"
+  description="Senior AI Engineer in Wien. Retrieval-Augmented Generation, semantische Suche und asynchrone FastAPI-Services. Über sechs Jahre Erfahrung in Backend-, Plattform- und KI-Systemen."
+>
+  <main class="container writing-page">
+    <article class="glass-card">
+      <a class="back-link" href="/">English version</a>
+
+      <header class="writing-header">
+        <h1>Ermis Chorinopoulos</h1>
+        <p>Senior AI Engineer, Wien. EU-Bürger, keine Arbeitsgenehmigung erforderlich.</p>
+      </header>
+
+      <div class="writing-content">
+        <h2>Kurzprofil</h2>
+        <p>
+          Softwareentwickler mit über sechs Jahren Erfahrung in Backend-, Plattform- und
+          KI-Systemen, davon rund zwei Jahre mit Schwerpunkt auf Retrieval-Augmented Generation
+          und KI-gestützter Suche. Bei RISE habe ich eine RAG-Plattform für Dokumentensuche
+          verantwortet und dabei Suchqualität, Zuverlässigkeit der Ingestion, Performance und
+          Betriebsaufwand gegeneinander abgewogen. Davor habe ich Backend-, Daten- und
+          Automatisierungssysteme bei Kapsch TrafficCom, Huawei und Citibank gebaut.
+        </p>
+        <p>
+          Ich übernehme Verantwortung für ein System von der Architektur bis zum Betrieb und
+          liefere planbar. Bei Kapsch habe ich einen Testzyklus von zwei bis drei Wochen auf ein
+          bis zwei Tage verkürzt. Bei Huawei habe ich ein blockiertes Team mit eigenem Werkzeug
+          wieder handlungsfähig gemacht, wodurch die Lieferzeit von zwei bis drei Monaten auf ein
+          bis zwei Wochen sank.
+        </p>
+
+        <h2>Schwerpunkte</h2>
+        <ul>
+          <li>RAG, semantische Suche und Retrieval-Pipelines</li>
+          <li>FastAPI-Services und asynchrone Verarbeitung mit RabbitMQ und Redis</li>
+          <li>Ingestion: Crawling, Parsing, Chunking, Embedding und Indexierung</li>
+          <li>Ehrliche Evaluierung und Guardrails statt geschönter Kennzahlen</li>
+          <li>Docker, CI/CD mit GitHub Actions, Azure Container Apps</li>
+        </ul>
+
+        <h2>Berufserfahrung</h2>
+
+        <h3>Python AI Engineer, projektbasiert. Seit Okt. 2025, Wien</h3>
+        <ul>
+          <li>
+            FastAPI-Services für RAG, Retrieval-Workflows und Datenpipelines, mit klarer Trennung
+            zwischen API und Hintergrundverarbeitung.
+          </li>
+          <li>
+            Asynchrone Ingestion mit RabbitMQ und Redis, inklusive Job-Status, Wiederholungen und
+            Fehlerisolierung.
+          </li>
+        </ul>
+
+        <h3>Software Engineer, KI und Suche. RISE, Mai bis Sep. 2025, Wien</h3>
+        <ul>
+          <li>
+            Verantwortung für eine RAG-Plattform zur Dokumentensuche, inklusive Abwägung von
+            Suchqualität, Zuverlässigkeit, Performance und Betriebsaufwand.
+          </li>
+          <li>
+            Indexierung der Embeddings korrigiert, die bei großen Dokumentmengen nicht mehr
+            fertig wurde. Danach ließ sich jede Website vollständig indexieren, unabhängig von der
+            Anzahl der gefundenen Dokumente.
+          </li>
+          <li>
+            Telemetrie in den KI- und Suchkomponenten deaktiviert und überprüft, dass keine
+            ungewollte Datenweitergabe mehr stattfand.
+          </li>
+          <li>
+            Internes Werkzeug mit FastAPI und Streamlit gebaut, mit dem das Team Suchanfragen
+            testen und Ergebnisse bewerten konnte.
+          </li>
+          <li>Einen weiteren Entwickler bei der Einarbeitung begleitet.</li>
+        </ul>
+
+        <h3>KI-Spezialisierung und eigene Projekte. Apr. 2024 bis Apr. 2025, Wien</h3>
+        <ul>
+          <li>
+            Die Zeit zwischen zwei Verträgen genutzt, um von klassischer Backend-Entwicklung zu
+            angewandter KI, Retrieval-Systemen und RAG-Architektur zu wechseln.
+          </li>
+          <li>Parallel dazu Deutsch weiter Richtung C1 vertieft.</li>
+        </ul>
+
+        <h3>Software Engineer. Kapsch TrafficCom AG, Sep. 2023 bis Mär. 2024, Wien</h3>
+        <ul>
+          <li>
+            15 von rund 20 manuellen Testabläufen automatisiert oder so dokumentiert, dass sie
+            nicht mehr an einzelne Personen gebunden waren. Der Testzyklus sank von zwei bis drei
+            Wochen auf ein bis zwei Tage.
+          </li>
+        </ul>
+
+        <h3>Software Engineer. Huawei, Aug. 2021 bis Aug. 2023, Budapest</h3>
+        <ul>
+          <li>
+            Werkzeug gebaut, mit dem mein Team und weitere Teams außerhalb einer vorgeschriebenen
+            Platform-as-Code-Umgebung entwickeln und testen konnten, in der ein einzelnes
+            Speichern zwei bis fünf Minuten dauerte. Die Lieferzeit sank von zwei bis drei Monaten
+            auf ein bis zwei Wochen.
+          </li>
+          <li>Interne Automatisierungswerkzeuge für Python- und Java-Dienste über APIs.</li>
+        </ul>
+
+        <h3>Software Engineer. Citibank, Jan. 2019 bis Aug. 2021, Budapest</h3>
+        <ul>
+          <li>
+            Backend-Werkzeuge in Python, Java und SQL für CVE-Analyse und Schwachstellenmanagement,
+            für eine laufende Last von etwa 50 bis 100 CVEs der Voice-Abteilung.
+          </li>
+        </ul>
+
+        <h2>Ausgewählte Projekte</h2>
+        <ul>
+          <li>
+            <strong>RAG-Pipeline:</strong> asynchrone Ingestion mit FastAPI, RabbitMQ und Redis.
+            Aufwändiges Crawling und Indexieren bleibt außerhalb des Request-Pfads, Antworten
+            enthalten Quellenangaben.
+          </li>
+          <li>
+            <strong>SMS-Spam-Erkennung:</strong> vollständiger Weg vom Modell bis zum
+            ausgelieferten Dienst, mit duplikatsicherer Auswertung, React-Oberfläche, Docker und
+            Azure.
+          </li>
+          <li>
+            <strong>CRM-Backend-Optimierung:</strong> Django und PostgreSQL über drei Millionen
+            Datensätze, durchschnittliche Latenz um 12 bis 21 Prozent gesenkt, mit
+            dokumentierten Messungen.
+          </li>
+        </ul>
+
+        <h2>Sprachen</h2>
+        <ul>
+          <li>Deutsch: B2 abgeschlossen, C1-Kurs läuft</li>
+          <li>Englisch: C2, verhandlungssicher</li>
+          <li>Griechisch: Muttersprache</li>
+          <li>Chinesisch: Mittelstufe, beruflich eingesetzt</li>
+        </ul>
+
+        <h2>Kontakt</h2>
+        <ul>
+          <li><a href="mailto:ermis.chorinopoulos@gmail.com">ermis.chorinopoulos@gmail.com</a></li>
+          <li><a href="tel:+436603839028">+43 660 383 9028</a></li>
+          <li>
+            <a href="https://linkedin.com/in/ermischo" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/ermischo
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ErmisCho" target="_blank" rel="noopener noreferrer">
+              github.com/ErmisCho
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ErmisCho/ErmisCho.github.io/releases/download/cv/Ermis-Chorinopoulos-CV-AI-Engineer-Deutsch.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lebenslauf als PDF herunterladen
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</BaseLayout>

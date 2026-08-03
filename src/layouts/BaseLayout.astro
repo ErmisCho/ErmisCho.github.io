@@ -10,18 +10,20 @@ import { siteMeta } from '../data/homepage';
 type Props = {
   title?: string;
   description?: string;
+  lang?: string;
 };
 
 const {
   title = siteMeta.title,
   description = siteMeta.description,
+  lang = 'en',
 } = Astro.props;
 
 const assetHref = (asset: string | { src: string }) => (typeof asset === 'string' ? asset : asset.src);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

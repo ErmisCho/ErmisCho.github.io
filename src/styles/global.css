@@ -388,6 +388,12 @@ section {
 }
 
 /* Projects Grid */
+.projects-subtitle {
+    margin: 3rem 0 1.5rem;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -437,6 +443,9 @@ section {
     padding-top: 1rem;
     border-top: 1px solid var(--glass-border);
     margin-top: auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .github-link {
@@ -449,12 +458,26 @@ section {
     transition: var(--transition);
 }
 
-.github-link:hover {
+a.github-link:hover {
     color: var(--text-primary);
 }
 
 .github-link i {
     color: var(--accent-1);
+}
+
+.project-preview {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 0.5rem 0 1rem;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.case-study-link {
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 /* Skills Grid */

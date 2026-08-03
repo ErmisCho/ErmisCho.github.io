@@ -5,12 +5,18 @@ import {
   education,
   experience,
   hero,
+  honourableProjects,
   languages,
   navigation,
   profile,
   projects,
   skills,
 } from '../data/homepage';
+
+const projectGroups = [
+  { items: projects },
+  { title: 'Honourable Mentions', items: honourableProjects },
+];
 ---
 
 <BaseLayout>
@@ -84,6 +90,13 @@ import {
               <ul>
                 {item.highlights.map((highlight) => <li>{highlight}</li>)}
               </ul>
+              {
+                'caseStudy' in item && item.caseStudy && (
+                  <a href={item.caseStudy} class="github-link case-study-link">
+                    <i class="fas fa-book-open"></i> Read the deep dive
+                  </a>
+                )
+              }
             </div>
           ))
         }
@@ -95,28 +108,95 @@ import {
         <h3 class="section-title">Selected Projects & Independent Work</h3>
       </div>
 
-      <div class="projects-grid">
-        {
-          projects.map((project) => (
-            <div class="project-card glass-card card-hover">
-              <div class="project-header">
-                <h4>{project.title}</h4>
-                <div class="tech-stack">
-                  {project.tags.map((tag) => <span class="tech-tag">{tag}</span>)}
+      {
+        projectGroups.map((group) => (
+          <>
+            {group.title && <h4 class="projects-subtitle">{group.title}</h4>}
+            <div class="projects-grid">
+              {group.items.map((project) => (
+                <div class="project-card glass-card card-hover">
+                  <div class="project-header">
+                    <h4>{project.title}</h4>
+                    <div class="tech-stack">
+                      {project.tags.map((tag) => <span class="tech-tag">{tag}</span>)}
+                    </div>
+                  </div>
+                  {
+                    'previewVideo' in project && project.previewVideo && (
+                      <video
+                        class="project-preview"
+                        src={project.previewVideo}
+                        aria-label={'previewAlt' in project ? project.previewAlt : undefined}
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        preload="metadata"
+                      />
+                    )
+                  }
+                  {
+                    'preview' in project && project.preview && (
+                      <img
+                        src={project.preview.src}
+                        alt={'previewAlt' in project ? project.previewAlt : ''}
+                        class="project-preview"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )
+                  }
+                  <ul>
+                    {project.highlights.map((highlight) => <li>{highlight}</li>)}
+                  </ul>
+                  <div class="project-links">
+                    {
+                      'private' in project && project.private ? (
+                        <span class="github-link">
+                          <i class="fas fa-lock" /> Private repository, source available on request
+                        </span>
+                      ) : (
+                        <a href={project.href} target="_blank" rel="noopener noreferrer" class="github-link">
+                          {'repository' in project && project.repository ? (
+                            <>
+                              <i class="fas fa-external-link-alt" /> Live App
+                            </>
+                          ) : (
+                            <>
+                              <i class="fab fa-github" /> GitHub
+                            </>
+                          )}
+                        </a>
+                      )
+                    }
+
+                    {
+                      'repository' in project && project.repository && (
+                        <a
+                          href={project.repository}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="github-link"
+                        >
+                          <i class="fab fa-github"></i> GitHub
+                        </a>
+                      )
+                    }
+
+                    {
+                      'caseStudy' in project && project.caseStudy && (
+                        <a href={project.caseStudy} class="github-link case-study-link">
+                          <i class="fas fa-book-open"></i> Read the deep dive
+                        </a>
+                      )
+                    }
+                  </div>
                 </div>
-              </div>
-              <ul>
-                {project.highlights.map((highlight) => <li>{highlight}</li>)}
-              </ul>
-              <div class="project-links">
-                <a href={project.href} target="_blank" rel="noopener" class="github-link">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-              </div>
+              ))}
             </div>
-          ))
-        }
-      </div>
+          </>
+        ))
+      }
     </section>
 
     <section id="skills" class="section-reveal">
