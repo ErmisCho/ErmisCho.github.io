@@ -36,10 +36,10 @@ The embedding work was being issued as individual calls, one per unit of work, s
 round trips scaled one to one with the number of documents. Past a certain corpus size, the run
 could not get through them.
 
-Batching the calls collapsed that. The same volume of text still had to be embedded, but it no
-longer arrived as thousands of separate requests, and completion stopped depending on how many
-documents the crawl happened to find. The property that matters here is not "indexing is
-faster" but "indexing finishes."
+Batching the calls reduced that overhead. The same volume of text still had to be embedded, but
+it no longer arrived as thousands of separate requests. This made completion practical for the
+larger crawls the platform needed to support. The property that mattered was not simply that
+indexing became faster, but that the required indexing runs could finish reliably.
 
 Batch size is the knob this introduces, and it is a trade-off rather than a number to maximise.
 Larger batches amortise more per-call overhead, but they increase payload size and widen the
@@ -84,8 +84,9 @@ team could look at what retrieval actually returned for a given query instead of
 from the final answer. Tooling like this is easy to postpone because it ships nothing to
 customers. It is also what turns arguments about search quality into observations.
 
-Alongside the platform work I supported another engineer through ramp-up, walking through code
-behaviour, system flows, and implementation details.
+I also documented and communicated the relevant code behaviour, system flows, and implementation
+changes, reducing knowledge concentration and making the system easier for other engineers to
+understand and extend.
 
 ## What I would keep
 
