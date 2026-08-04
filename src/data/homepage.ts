@@ -168,6 +168,8 @@ export const projects = [
     href: 'https://github.com/ErmisCho/rag-pipeline',
     caseStudy: '/case-studies/async-rag-ingestion',
     previewVideo: '/previews/rag-pipeline-demo.mp4',
+    previewWidth: 1280,
+    previewHeight: 660,
     previewAlt: 'Screen recording of the Documentation Helper ingesting a site and answering with citations',
   },
   {
@@ -187,6 +189,8 @@ export const projects = [
     href: 'https://dachapply.livelysea-3461ad21.westeurope.azurecontainerapps.io',
     repository: 'https://github.com/ErmisCho/dachapply',
     previewVideo: '/previews/dachapply-demo.mp4',
+    previewWidth: 1280,
+    previewHeight: 720,
     previewAlt: 'Screen recording of DACHApply adding a job link, importing ChatGPT analysis, and preparing local CV generation',
     previewCaption: 'Add job → Analyze fit → Generate application',
   },

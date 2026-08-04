@@ -51,23 +51,6 @@ const assetHref = (asset: string | { src: string }) => (typeof asset === 'string
     <slot />
     <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
-        const revealElements = document.querySelectorAll('.section-reveal');
-
-        const revealCallback = (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-            }
-          });
-        };
-
-        const revealObserver = new IntersectionObserver(revealCallback, {
-          threshold: 0.15,
-          rootMargin: '0px 0px -50px 0px',
-        });
-
-        revealElements.forEach((el) => revealObserver.observe(el));
-
         const progressBars = document.querySelectorAll('.progress');
         progressBars.forEach((bar) => {
           bar.style.transform = 'scaleX(0)';
@@ -89,7 +72,6 @@ const assetHref = (asset: string | { src: string }) => (typeof asset === 'string
         if (languageSection) {
           progressObserver.observe(languageSection);
         }
-
       });
     </script>
   </body>

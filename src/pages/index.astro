@@ -126,6 +126,8 @@ const projectGroups = [
                       <video
                         class="project-preview"
                         src={project.previewVideo}
+                        width={'previewWidth' in project ? project.previewWidth : undefined}
+                        height={'previewHeight' in project ? project.previewHeight : undefined}
                         aria-label={'previewAlt' in project ? project.previewAlt : undefined}
                         autoplay
                         loop
@@ -139,6 +141,8 @@ const projectGroups = [
                     'preview' in project && project.preview && (
                       <img
                         src={project.preview.src}
+                        width={project.preview.width}
+                        height={project.preview.height}
                         alt={'previewAlt' in project ? project.previewAlt : ''}
                         class="project-preview"
                         loading="lazy"

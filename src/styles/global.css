@@ -32,10 +32,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -652,18 +648,6 @@ footer {
 
 .writing-content a {
     color: var(--text-primary);
-}
-
-/* Animations & Interactivity */
-.section-reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.section-reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Responsive */
