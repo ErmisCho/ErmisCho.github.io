@@ -166,7 +166,6 @@ section {
 }
 
 .card-hover:hover {
-    transform: translateY(-5px);
     background: var(--glass-hover);
     border-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgba(79, 70, 229, 0.1);
@@ -473,6 +472,13 @@ a.github-link:hover {
     border-radius: 12px;
     margin: 0.5rem 0 1rem;
     background: rgba(255, 255, 255, 0.04);
+}
+
+.project-preview-caption {
+    margin: -0.5rem 0 1rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-align: center;
 }
 
 .case-study-link {

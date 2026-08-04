@@ -146,6 +146,11 @@ const projectGroups = [
                       />
                     )
                   }
+                  {
+                    'previewCaption' in project && project.previewCaption && (
+                      <p class="project-preview-caption">{project.previewCaption}</p>
+                    )
+                  }
                   <ul>
                     {project.highlights.map((highlight) => <li>{highlight}</li>)}
                   </ul>

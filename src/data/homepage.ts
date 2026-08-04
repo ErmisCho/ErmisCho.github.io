@@ -182,10 +182,13 @@ export const projects = [
     ],
     highlights: [
       'Built and deployed an authenticated job-intelligence platform with Django REST Framework, React, TypeScript, and PostgreSQL for invite-based lead intake and application tracking.',
-      'Implemented AI-assisted evaluation from generated prompts plus schema-validated, transactional import of externally produced model output, with portable user data and Azure Container Apps delivery.',
+      'Built a hosted, prompt-based job-fit workflow with schema-validated, transactional JSON import—no paid LLM API required—plus a clearly separated local mode for generating tailored CVs and motivation letters.',
     ],
     href: 'https://dachapply.livelysea-3461ad21.westeurope.azurecontainerapps.io',
     repository: 'https://github.com/ErmisCho/dachapply',
+    previewVideo: '/previews/dachapply-demo.mp4',
+    previewAlt: 'Screen recording of DACHApply adding a job link, importing ChatGPT analysis, and preparing local CV generation',
+    previewCaption: 'Add job → Analyze fit → Generate application',
   },
   {
     title: 'CRM Backend Optimization',
