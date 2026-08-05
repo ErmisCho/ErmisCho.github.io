@@ -2,5 +2,14 @@
 .codex
 dist/
 node_modules/
-.orchestrator/
 PORTFOLIO.md
+
+.orchestrator/*
+!.orchestrator/bootstrap.lock
+!.orchestrator/policy/
+!.orchestrator/policy/quality-gates.json
+!.orchestrator/metrics/
+.orchestrator/metrics/*
+!.orchestrator/metrics/README.md
+!.orchestrator/metrics/learnings.jsonl
+!.orchestrator/metrics/sessions.jsonl

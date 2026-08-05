@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rationale": "Canonical quality-gate commands for the Astro portfolio.",
+  "commands": {
+    "test": {
+      "command": "npm run build",
+      "required": true
+    },
+    "typecheck": {
+      "command": "npm exec tsc -- --noEmit",
+      "required": true
+    },
+    "lint": {
+      "command": "git diff --check",
+      "required": true
+    }
+  }
+}
