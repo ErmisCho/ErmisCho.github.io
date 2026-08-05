@@ -1,4 +1,5 @@
 import agenticRagPreview from '../../assets/images/projects/agentic-rag-graph.png';
+import crmBenchmarkPreview from '../../assets/images/projects/crm-benchmark.png';
 import smsSpamPreview from '../../assets/images/projects/sms-spam-demo.gif';
 
 export const siteMeta = {
@@ -202,6 +203,8 @@ export const projects = [
       'Reduced average latency by 12-21% across four documented baseline-versus-optimized benchmark scenarios, keeping the raw results as evidence.',
     ],
     href: 'https://github.com/ErmisCho/crm-backend-optimization',
+    preview: crmBenchmarkPreview,
+    previewAlt: 'Benchmark chart comparing baseline and optimized Django CRM API latency across three million synthetic rows',
   },
   {
     title: 'Campaign Event Analytics Pipeline',
@@ -211,6 +214,11 @@ export const projects = [
       'Stored date-partitioned Parquet data, queried aggregates with DuckDB, exposed typed FastAPI analytics endpoints, and verified the flow with 29 pytest tests in GitHub Actions.',
     ],
     href: 'https://github.com/ErmisCho/campaign-event-analytics-pipeline',
+    previewVideo: '/previews/campaign-analytics-demo.mp4',
+    previewWidth: 1280,
+    previewHeight: 720,
+    previewAlt: 'Screen recording of the Campaign Event Analytics Pipeline OpenAPI interface returning summary and filtered entity metrics',
+    previewCaption: 'OpenAPI → Summary metrics → Filtered entity analytics',
   },
 ];
 
