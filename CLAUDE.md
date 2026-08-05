@@ -42,7 +42,7 @@ ssot-files:
   - README.md
   - src/data/homepage.ts
   - C:/latex/github_projects.MD
-vault:
-  path: C:/Users/Administrator/Projects/vault
-  product-domain: portfolio
-  persona-db:
+vault-integration:
+  enabled: true
+  vault-dir: C:/Users/Administrator/Backup/Desktop-Trident/obsidian_vault
+  mode: warn
