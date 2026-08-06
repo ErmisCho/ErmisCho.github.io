@@ -180,6 +180,20 @@ const projectGroups = [
                     }
 
                     {
+                      'alternateHref' in project && project.alternateHref && (
+                        <a
+                          href={project.alternateHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="github-link"
+                        >
+                          <i class="fas fa-external-link-alt"></i>{' '}
+                          {'alternateLabel' in project ? project.alternateLabel : 'Alternate version'}
+                        </a>
+                      )
+                    }
+
+                    {
                       'repository' in project && project.repository && (
                         <a
                           href={project.repository}
