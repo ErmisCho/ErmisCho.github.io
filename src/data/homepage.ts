@@ -1,5 +1,8 @@
 import agenticRagPreview from '../../assets/images/projects/agentic-rag-graph.png';
+import aiInterviewCoachPreview from '../../assets/images/projects/ai-interview-coach.webp';
+import chatdeckPreview from '../../assets/images/projects/chatdeck.webp';
 import crmBenchmarkPreview from '../../assets/images/projects/crm-benchmark.png';
+import luxJournalPreview from '../../assets/images/projects/lux-journal.webp';
 import smsSpamPreview from '../../assets/images/projects/sms-spam-demo.gif';
 
 export const siteMeta = {
@@ -243,6 +246,8 @@ export const honourableProjects = [
     ],
     href: 'https://github.com/ErmisCho/chatdeck',
     private: true,
+    preview: chatdeckPreview,
+    previewAlt: 'Chatdeck desktop window showing two side-by-side ChatGPT WebView panes labelled Research and Applications',
   },
   {
     title: 'AI Interview Coach DACH',
@@ -252,6 +257,8 @@ export const honourableProjects = [
       'Supports deterministic heuristics and local-model evaluators with explicit fallback behavior.',
     ],
     href: 'https://github.com/ErmisCho/ai-interview-coach-dach',
+    preview: aiInterviewCoachPreview,
+    previewAlt: 'AI Interview Coach DACH scoring a synthetic German interview answer with deterministic feedback',
   },
   {
     title: 'Lux Journal CMS',
@@ -260,6 +267,8 @@ export const honourableProjects = [
       'Built an editorial CMS for configurable luxury-brand landing pages, founder storytelling, structured journal content, search, galleries, and shop calls to action.',
     ],
     href: 'https://github.com/ErmisCho/lux-journal-cms',
+    preview: luxJournalPreview,
+    previewAlt: 'Lux Journal CMS landing page with an editorial founder story and jewellery feature',
   },
 ];
 
