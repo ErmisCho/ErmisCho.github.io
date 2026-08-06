@@ -9,6 +9,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Actual-execution previews for Campaign Event Analytics and CRM benchmark evidence.
+- Static previews for the remaining honourable-mention projects.
 
 ### Changed
 
