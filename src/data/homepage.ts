@@ -92,6 +92,7 @@ export const experience = [
     location: 'Vienna, Austria',
     highlights: [
       'Built and deployed independent backend, data, and AI-backed systems using Python, FastAPI, Django, React, PostgreSQL, Docker, and Azure, owning architecture, implementation, testing, and technical delivery.',
+      'Built and deployed an ongoing private multi-service logistics platform with TypeScript, PostgreSQL, Django/FastAPI, Docker, and Azure, owning architecture, tenant-aware access, automated testing, CI/CD, and guarded AI-service delivery; demonstrated initial workflows to prospective clients.',
       "Delivered and deployed two Django storefront experiences for a jewellery client, adapting a transactional webshop with tested PayPal Sandbox checkout into an assisted-sales flow as the client's sales strategy evolved.",
       'Implemented reliability-focused systems including asynchronous ingestion, background-job tracking, validation, retry handling, guarded AI workflows, and reproducible evaluation.',
     ],
