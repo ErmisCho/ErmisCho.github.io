@@ -92,7 +92,7 @@ export const experience = [
     location: 'Vienna, Austria',
     highlights: [
       'Built and deployed independent backend, data, and AI-backed systems using Python, FastAPI, Django, React, PostgreSQL, Docker, and Azure, owning architecture, implementation, testing, and technical delivery.',
-      'Developed a custom Django webshop and Wagtail CMS from external stakeholder requirements, translating functional needs into maintainable application architecture and deployment-ready implementations.',
+      "Delivered and deployed two Django storefront experiences for a jewellery client, adapting a transactional webshop with tested PayPal Sandbox checkout into an assisted-sales flow as the client's sales strategy evolved.",
       'Implemented reliability-focused systems including asynchronous ingestion, background-job tracking, validation, retry handling, guarded AI workflows, and reproducible evaluation.',
     ],
   },
@@ -197,6 +197,23 @@ export const projects = [
     previewHeight: 720,
     previewAlt: 'Screen recording of DACHApply adding a job link, importing ChatGPT analysis, and preparing local CV generation',
     previewCaption: 'Add job → Analyze fit → Generate application',
+  },
+  {
+    title: 'Client-Directed Django Webshop',
+    tags: ['Django', 'PayPal Sandbox', 'PythonAnywhere', 'JavaScript'],
+    highlights: [
+      'Built and deployed a Django webshop for a jewellery client with accounts, product variants, cart, orders, reviews, Django-admin catalogue management, and a tested PayPal Sandbox checkout.',
+      "Delivered a second luxury storefront that shifted direct purchasing to salesperson-assisted enquiries when the client's sales strategy changed.",
+    ],
+    href: 'https://ermis.pythonanywhere.com/',
+    alternateHref: 'https://ermis.pythonanywhere.com/lux/',
+    alternateLabel: 'Luxury version',
+    repository: 'https://github.com/ErmisCho/webshop',
+    previewVideo: '/previews/django-webshop-demo.mp4',
+    previewWidth: 1280,
+    previewHeight: 720,
+    previewAlt: 'Short comparison of the transactional Django webshop and its client-directed luxury assisted-sales version',
+    previewCaption: 'Transactional webshop → Client-directed assisted sales',
   },
   {
     title: 'CRM Backend Optimization',
