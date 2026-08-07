@@ -6,9 +6,9 @@ import luxJournalPreview from '../../assets/images/projects/lux-journal.webp';
 import smsSpamPreview from '../../assets/images/projects/sms-spam-demo.gif';
 
 export const siteMeta = {
-  title: 'Ermis Chorinopoulos | Senior AI Software Engineer, Vienna',
+  title: 'Ermis Chorinopoulos | Senior Software & AI Engineer, Vienna',
   description:
-    'Senior AI Software Engineer in Vienna building reliable Python, FastAPI, backend, search, and AI-backed systems with a focus on maintainability, explicit technical trade-offs, and dependable delivery.',
+    'Senior Software Engineer in Vienna building reliable Python, FastAPI, backend, search, and AI systems across enterprise and end-to-end product environments.',
 };
 
 export const navigation = [
@@ -22,8 +22,8 @@ export const navigation = [
 
 export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
-  role: 'Senior AI Software Engineer',
-  techStack: 'Python • FastAPI • AI & Search Systems • Reliable Backend Engineering',
+  role: 'Senior Software Engineer | AI, Backend & Search Systems',
+  techStack: 'Python • FastAPI • Django • RAG/Search • Reliable Delivery',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -82,7 +82,7 @@ export const hero = {
 };
 
 export const profile =
-  'Senior software engineer based in Vienna with experience building backend and platform systems in enterprise environments, complemented by hands-on work on AI-backed applications and search systems. I develop Python and FastAPI services, asynchronous data-processing workflows, and SQL-backed systems with a focus on explicit technical trade-offs, operational clarity, maintainability, and reliable delivery. My work addresses practical failure modes such as unreliable ingestion, weak retrieval evidence, unbounded AI requests, silent background-job failures, and misleading evaluation.';
+  'Senior software engineer in Vienna with enterprise experience leading engineering delivery and building reliable backend, AI, and data systems. I work across Python, FastAPI, Django, search/RAG, PostgreSQL, testing, CI/CD, and cloud deployment, and currently own products end to end from architecture through stakeholder demonstrations.';
 
 export const experience = [
   {
@@ -91,10 +91,10 @@ export const experience = [
     date: 'Oct 2025 - Present',
     location: 'Vienna, Austria',
     highlights: [
-      'Built and deployed independent backend, data, and AI-backed systems using Python, FastAPI, Django, React, PostgreSQL, Docker, and Azure, owning architecture, implementation, testing, and technical delivery.',
-      'Built and deployed an ongoing private multi-service logistics platform with TypeScript, PostgreSQL, Django/FastAPI, Docker, and Azure, owning architecture, tenant-aware access, automated testing, CI/CD, and guarded AI-service delivery; demonstrated initial workflows to prospective clients.',
-      "Delivered and deployed two Django storefront experiences for a jewellery client, adapting a transactional webshop with tested PayPal Sandbox checkout into an assisted-sales flow as the client's sales strategy evolved.",
-      'Implemented reliability-focused systems including asynchronous ingestion, background-job tracking, validation, retry handling, guarded AI workflows, and reproducible evaluation.',
+      'Built and deployed an ongoing private multi-service logistics platform with TypeScript, PostgreSQL, Django/FastAPI, Docker, and Azure, and demonstrated initial workflows to prospective clients.',
+      'Owned the platform architecture end to end, including tenant-aware access, automated tests, CI/CD, and guarded AI-service delivery.',
+      'Developed independent software and AI systems, including a custom Django webshop and Wagtail CMS developed from external stakeholder requirements, owning architecture, implementation, testing, and deployment preparation.',
+      'Built and deployed additional backend and AI projects using Python, FastAPI, Django, React, PostgreSQL, Docker, and Azure, with responsibility for technical decisions and reliable delivery.',
     ],
   },
   {
@@ -111,6 +111,16 @@ export const experience = [
       'Documented and communicated the architecture and implementation changes, reducing knowledge concentration and enabling other engineers to contribute effectively.',
     ],
     caseStudy: '/case-studies/rag-platform-at-rise',
+  },
+  {
+    title: 'Professional Development',
+    organization: 'Full-time German language program',
+    date: 'Apr 2024 - Apr 2025',
+    location: 'Vienna, Austria',
+    highlights: [
+      'Completed an intensive German program from B1 through Goethe-Zertifikat B2, establishing professional working proficiency for the Austrian market.',
+      'Built independent Django and data-engineering practice projects to keep engineering skills current alongside the program.',
+    ],
   },
   {
     title: 'Software Engineer',
@@ -336,11 +346,11 @@ export const skills = [
     items: [
       'Docker',
       'Azure Container Apps',
-      'AWS',
       'GitHub Actions CI/CD',
-      'Bicep',
-      'Kubernetes environments',
       'Linux',
+      'pytest',
+      'Structured Logging',
+      'Retry / Error Handling',
       'Git',
     ],
   },
@@ -371,7 +381,7 @@ export const languages = [
   },
   {
     name: 'Chinese',
-    level: 'Upper-intermediate, used in professional context',
+    level: 'Intermediate, used in professional context',
     progress: 60,
   },
 ];
