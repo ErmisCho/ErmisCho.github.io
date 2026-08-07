@@ -8,10 +8,17 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Full German homepage at /de with the same layout as the English page, driven by a shared HomePage component and a German data module.
+
 - Actual-execution previews for Campaign Event Analytics and CRM benchmark evidence.
 - Static previews for the remaining honourable-mention projects.
 - Deployed client webshop as a selected project with a short transactional-to-assisted-sales comparison.
 - Anonymized ongoing private logistics-platform work under Independent Projects.
+
+### Fixed
+
+- Missing vertical gap between the hero contact chips and the Profile card.
+- CRLF line endings in global.css that made every edit fail the whitespace check.
 
 ### Changed
 
