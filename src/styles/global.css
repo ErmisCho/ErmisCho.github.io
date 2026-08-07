@@ -271,6 +271,11 @@ section {
 }
 
 /* Profile / Intro */
+/* .glass-card padding overrides the generic section padding, so restore outer spacing */
+section.glass-card {
+    margin-top: var(--spacing-xl);
+}
+
 #profile p {
     font-size: 1.1rem;
     color: var(--text-secondary);
