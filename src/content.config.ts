@@ -5,6 +5,7 @@ const writingBaseSchema = z.object({
   description: z.string(),
   publishDate: z.date().optional(),
   draft: z.boolean().default(false),
+  lang: z.enum(['en', 'de']).default('en'),
   tags: z.array(z.string()).default([]),
 });
 
