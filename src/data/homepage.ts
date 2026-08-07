@@ -5,6 +5,23 @@ import crmBenchmarkPreview from '../../assets/images/projects/crm-benchmark.png'
 import luxJournalPreview from '../../assets/images/projects/lux-journal.webp';
 import smsSpamPreview from '../../assets/images/projects/sms-spam-demo.gif';
 
+export const lang: string = 'en';
+
+export const strings = {
+  profileTitle: 'Profile',
+  experienceTitle: 'Professional Experience',
+  projectsTitle: 'Selected Projects & Independent Work',
+  honourableTitle: 'Honourable Mentions',
+  skillsTitle: 'Technical Skills',
+  educationTitle: 'Education',
+  languagesTitle: 'Languages',
+  caseStudyLabel: 'Read the deep dive',
+  privateRepoLabel: 'Private repository, source available on request',
+  liveAppLabel: 'Live App',
+  githubLabel: 'GitHub',
+  alternateLabelFallback: 'Alternate version',
+};
+
 export const siteMeta = {
   title: 'Ermis Chorinopoulos | Senior Software & AI Engineer, Vienna',
   description:
@@ -199,7 +216,7 @@ export const projects = [
     ],
     highlights: [
       'Built and deployed an authenticated job-intelligence platform with Django REST Framework, React, TypeScript, and PostgreSQL for invite-based lead intake and application tracking.',
-      'Built a hosted, prompt-based job-fit workflow with schema-validated, transactional JSON import—no paid LLM API required—plus a clearly separated local mode for generating tailored CVs and motivation letters.',
+      'Built a hosted, prompt-based job-fit workflow with schema-validated, transactional JSON import (no paid LLM API required), plus a clearly separated local mode for generating tailored CVs and motivation letters.',
     ],
     href: 'https://dachapply.livelysea-3461ad21.westeurope.azurecontainerapps.io',
     repository: 'https://github.com/ErmisCho/dachapply',
