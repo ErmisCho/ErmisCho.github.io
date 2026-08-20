@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Open Graph and Twitter Card metadata plus a canonical URL on every page, with a 1200x630 preview image, so links shared on LinkedIn, Slack and X render a real page preview instead of a scraper-cropped portrait.
+
 - Full German homepage at /de with the same layout as the English page, driven by a shared HomePage component and a German data module.
 
 - Actual-execution previews for Campaign Event Analytics and CRM benchmark evidence.
