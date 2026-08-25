@@ -22,6 +22,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Synchronized the bilingual positioning, experience, skills, and downloadable CV release with the English and German base CV v1.5 sources.
 - Aligned the English and German positioning, experience timelines, skills, and contact details with the current CVs.
 - Enabled Session Orchestrator vault mirroring against the local Obsidian vault.
 - Upgraded GitHub checkout and Node setup actions to the Node 24-based v7 releases.

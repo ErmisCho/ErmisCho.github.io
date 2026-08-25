@@ -23,9 +23,9 @@ export const strings = {
 };
 
 export const siteMeta = {
-  title: 'Ermis Chorinopoulos | Senior Software & AI Engineer, Wien',
+  title: 'Ermis Chorinopoulos | Senior Software Engineer, Wien',
   description:
-    'Senior Software Engineer in Wien für zuverlässige Python-, FastAPI-, Backend-, Such- und KI-Systeme in Enterprise-Umgebungen und durchgängig verantworteten Produktprojekten.',
+    'Senior Software Engineer in Wien für Python-, FastAPI-, AI/RAG- und Datensysteme in Enterprise-Umgebungen und durchgängig verantworteten Produktprojekten.',
 };
 
 export const navigation = [
@@ -39,8 +39,8 @@ export const navigation = [
 
 export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
-  role: 'Senior Software Engineer | KI-, Backend- & Suchsysteme',
-  techStack: 'Python • FastAPI • Django • RAG/Search • Zuverlässige Bereitstellung',
+  role: 'Senior Software Engineer | Python, FastAPI, AI/RAG & Datensysteme',
+  techStack: 'Python • FastAPI • Django • AI/RAG • Datensysteme • Zuverlässige Bereitstellung',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -99,18 +99,18 @@ export const hero = {
 };
 
 export const profile =
-  'Senior Software Engineer in Wien mit Enterprise-Erfahrung in der Leitung technischer Umsetzung und der Entwicklung zuverlässiger Backend-, KI- und Datensysteme. Ich arbeite mit Python, FastAPI, Django, Search/RAG, PostgreSQL, Tests, CI/CD und Cloud-Deployment und verantworte aktuell Produkte durchgängig von der Architektur bis zu Stakeholder-Demonstrationen.';
+  'Senior Software Engineer in Wien, seit 2019 in der Entwicklung von Backend- und Plattformsystemen in Enterprise-Umgebungen, ergänzt durch berufliche Arbeit an KI-gestützten Anwendungen und Suchsystemen. Ich entwickle Python- und FastAPI-Services, asynchrone Datenverarbeitungsprozesse sowie SQL-gestützte Systeme—zuletzt durch die Umstellung einzelner Embedding-Aufrufe auf Batch-Verarbeitung, Fehlerisolation in einer produktiven RAG-Plattform und die Bereitstellung containerisierter Services auf Azure. Mein Fokus liegt auf nachvollziehbaren technischen Entscheidungen, operativer Klarheit, Wartbarkeit und zuverlässiger Bereitstellung.';
 
 export const experience = [
   {
-    title: 'Senior Software Engineer (Unabhängige Projekte)',
+    title: 'Softwareingenieur (unabhängige Projekte)',
     organization: 'Unabhängige Software- und KI-Projekte',
     date: 'Okt 2025 - heute',
     location: 'Wien, Österreich',
     highlights: [
       'Entwickelte und deployte eine laufende private Multi-Service-Logistikplattform mit TypeScript, PostgreSQL, Django/FastAPI, Docker und Azure und demonstrierte potenziellen Kunden erste Workflows.',
-      'Verantwortete die Plattformarchitektur durchgängig, einschließlich mandantenfähiger Zugriffskontrolle, automatisierter Tests, CI/CD und abgesicherter KI-Services.',
-      'Entwickelte eigenständige Software- und KI-Systeme, darunter einen individuellen Django-Webshop und ein Wagtail-CMS für einen externen Kontakt, mit Verantwortung für Architektur, Implementierung, Tests und Deployment-Vorbereitung.',
+      'Konzipierte und verantwortete die Plattformarchitektur durchgängig, einschließlich mandantenfähiger Zugriffskontrolle, automatisierter Tests, CI/CD und abgesicherter KI-Services.',
+      'Entwickelte eigenständige Software- und KI-Systeme, darunter einen individuellen Django-Webshop und ein Wagtail-CMS nach Anforderungen eines externen Stakeholders, mit Verantwortung für Architektur, Implementierung, Tests und Deployment-Vorbereitung.',
       'Konzipierte und deployte weitere Backend- und KI-Projekte mit Python, FastAPI, Django, React, PostgreSQL, Docker und Azure und übernahm Verantwortung für technische Entscheidungen und zuverlässige Bereitstellung.',
     ],
   },
@@ -120,9 +120,9 @@ export const experience = [
     date: 'Mai 2025 - Sep 2025',
     location: 'Wien, Österreich',
     highlights: [
-      'Übernahm die Hauptverantwortung für die Weiterentwicklung bestehender Python- und FastAPI-Services für Dokumentenintegration, Indexierung und RAG-gestützte Suche, arbeitete sich weitgehend selbstständig in die Codebasis ein und stimmte Reviews mit dem bisherigen Verantwortlichen ab.',
+      'Übernahm die Hauptverantwortung für die Weiterentwicklung bestehender Python- und FastAPI-Services für Dokumentenintegration, Indexierung und RAG-gestützte Suche, arbeitete sich selbstständig in die Codebasis ein und arbeitete mit dem bestehenden Elasticsearch/OpenSearch-Retrieval-Stack.',
       'Ersetzte einzelne Embedding-Aufrufe durch konfigurierbare Batch-Verarbeitung, reduzierte dadurch den Request-Overhead und machte die Indexierung großer Dokumentmengen planbarer.',
-      'Implementierte Retry- und Fehlerisolationsmechanismen, sodass einzelne Dokumentfehler nicht mehr zum Abbruch vollständiger Crawls führten und das Risiko fehlgeschlagener Indexierungen vor Kundendemos sank.',
+      'Implementierte Retry- und Fehlerisolationsmechanismen, sodass einzelne Dokumentfehler nicht mehr zum Abbruch vollständiger Crawls führten und das Risiko fehlgeschlagener Indexierungen vor Kundendemos sank; containerisierte Services mit Docker, deployte sie in eine bestehende Kubernetes-Umgebung und behob dort Deployment- und Laufzeitprobleme.',
       'Begrenzte Token-Nutzung und LLM-Verarbeitungsschritte, um Fehler und Verzögerungen durch übergroße Anfragen zu vermeiden und die Zuverlässigkeit sowie Antwortzeit für Nutzer zu verbessern.',
       'Entwickelte interne FastAPI- und Streamlit-Tools für Abfragetests und Ergebnisanalyse, wodurch Retrieval-Verhalten und Antwortqualität leichter bewertet werden konnten.',
       'Dokumentierte und vermittelte Architektur sowie Implementierungsänderungen, reduzierte dadurch Wissenskonzentration und ermöglichte anderen Engineers eine effektive Mitarbeit.',
@@ -135,8 +135,8 @@ export const experience = [
     date: 'Apr 2024 - Apr 2025',
     location: 'Wien, Österreich',
     highlights: [
-      'Absolvierte ein intensives Deutschprogramm von B1 bis zum Goethe-Zertifikat B2 und erreichte berufliche Sprachkompetenz für den österreichischen Arbeitsmarkt.',
-      'Entwickelte parallel eigenständige Django- und Data-Engineering-Übungsprojekte, um die technischen Fähigkeiten aktuell zu halten.',
+      'Absolvierte ein intensives Deutschprogramm von B1 bis zum Goethe-Zertifikat B2 und baute berufliche Deutschkenntnisse für den österreichischen Arbeitsmarkt auf.',
+      'Entwickelte parallel eigenständige Django-REST-APIs und Python-Datenverarbeitungspipelines, um Backend- und Data-Engineering-Kenntnisse aktuell zu halten.',
     ],
   },
   {
@@ -152,12 +152,12 @@ export const experience = [
     ],
   },
   {
-    title: 'Software Engineer',
+    title: 'Softwareingenieur / Team Lead',
     organization: 'Huawei',
     date: 'Aug 2021 - Aug 2023',
     location: 'Budapest, Ungarn',
     highlights: [
-      'Leitete das Engineering-Team, koordinierte Prioritäten, überprüfte Implementierungen und stimmte die Umsetzung mit den Anforderungen der Stakeholder ab.',
+      'Leitete ein Engineering-Team, koordinierte Prioritäten, überprüfte Implementierungen und stimmte die Umsetzung mit den Anforderungen der Stakeholder ab.',
       'Konzipierte und entwickelte einen kompatibilitätsorientierten Entwicklungsprozess, der Engineers während der Einführung einer neuen Security-Plattform effizientes Weiterarbeiten ermöglichte.',
       'Reduzierte plattformspezifische Speicher-, Kompilierungs- und Integrationsprobleme, bevor der Code in die Zielumgebung übertragen wurde, verringerte dadurch Nacharbeit und trug dazu bei, die Lieferzeit von ungefähr zwei bis drei Monaten wieder auf ein bis zwei Wochen zu verkürzen.',
       'Traf Architekturentscheidungen zu APIs, Datenmodellen, Integrationen und der Migration von Backend-Services von Windows auf Linux.',
@@ -362,6 +362,7 @@ export const skills = [
     icon: 'fas fa-cloud',
     items: [
       'Docker',
+      'Kubernetes',
       'Azure Container Apps',
       'GitHub Actions CI/CD',
       'Linux',
@@ -383,7 +384,7 @@ export const education = {
 export const languages = [
   {
     name: 'Deutsch',
-    level: 'Beruflich einsetzbar, Goethe-Zertifikat B2, C1-Kurs laufend',
+    level: 'Beruflich einsetzbar, Goethe-Zertifikat B2, C1-Kurs seit März 2026',
     progress: 80,
   },
   {
