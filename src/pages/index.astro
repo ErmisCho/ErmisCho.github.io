@@ -3,13 +3,4 @@ import HomePage from '../components/HomePage.astro';
 import * as data from '../data/homepage';
 ---
 
-<script is:inline>
-  const demos = {
-    dachapply: 'https://dachapply.livelysea-3461ad21.westeurope.azurecontainerapps.io',
-    'sms-spam': 'https://sms-spam-demo-app.calmbay-8a13956d.germanywestcentral.azurecontainerapps.io',
-  };
-  const demo = new URLSearchParams(location.search).get('demo');
-  if (demo in demos) location.replace(demos[demo]);
-</script>
-
 <HomePage data={data} />
