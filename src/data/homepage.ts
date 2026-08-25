@@ -23,9 +23,9 @@ export const strings = {
 };
 
 export const siteMeta = {
-  title: 'Ermis Chorinopoulos | Senior Software & AI Engineer, Vienna',
+  title: 'Ermis Chorinopoulos | Senior Software Engineer, Vienna',
   description:
-    'Senior Software Engineer in Vienna building reliable Python, FastAPI, backend, search, and AI systems across enterprise and end-to-end product environments.',
+    'Senior Software Engineer in Vienna building Python, FastAPI, AI/RAG, and data systems across enterprise and end-to-end product environments.',
 };
 
 export const navigation = [
@@ -39,8 +39,8 @@ export const navigation = [
 
 export const hero = {
   name: ['Ermis', 'Chorinopoulos'],
-  role: 'Senior Software Engineer | AI, Backend & Search Systems',
-  techStack: 'Python • FastAPI • Django • RAG/Search • Reliable Delivery',
+  role: 'Senior Software Engineer | Python, FastAPI, AI/RAG & Data Systems',
+  techStack: 'Python • FastAPI • Django • AI/RAG • Data Systems • Reliable Delivery',
   imageAlt: 'Ermis Chorinopoulos',
   contacts: [
     {
@@ -99,11 +99,11 @@ export const hero = {
 };
 
 export const profile =
-  'Senior software engineer in Vienna with enterprise experience leading engineering delivery and building reliable backend, AI, and data systems. I work across Python, FastAPI, Django, search/RAG, PostgreSQL, testing, CI/CD, and cloud deployment, and currently own products end to end from architecture through stakeholder demonstrations.';
+  'Senior software engineer in Vienna, building backend and platform systems in enterprise environments since 2019, complemented by professional work on AI-backed applications and search systems. I develop Python and FastAPI services, asynchronous data-processing workflows, and SQL-backed systems—most recently replacing per-item embedding calls with batch processing, adding retry isolation to a production RAG platform, and delivering containerised services to Azure. I focus on explicit technical trade-offs, operational clarity, maintainability, and reliable delivery.';
 
 export const experience = [
   {
-    title: 'Senior Software Engineer (Independent Projects)',
+    title: 'Software Engineer (Independent Projects)',
     organization: 'Independent Software & AI Projects',
     date: 'Oct 2025 - Present',
     location: 'Vienna, Austria',
@@ -120,9 +120,9 @@ export const experience = [
     date: 'May 2025 - Sep 2025',
     location: 'Vienna, Austria',
     highlights: [
-      'Took primary responsibility for extending existing Python and FastAPI services for document ingestion, indexing, and RAG-backed search, independently building a detailed understanding of the codebase while coordinating reviews with the previous maintainer.',
+      'Took primary responsibility for extending existing Python and FastAPI services for document ingestion, indexing, and RAG-backed search, independently learning the codebase and working with the existing Elasticsearch/OpenSearch retrieval stack.',
       'Replaced per-item embedding calls with configurable batch processing, reducing request overhead and making large-document indexing more predictable.',
-      'Added retry and failure-isolation logic so individual document failures no longer stopped complete crawls, reducing the risk of failed indexing before client demonstrations.',
+      'Added retry and failure-isolation logic so individual document failures no longer stopped complete crawls, and containerised services with Docker and deployed and troubleshot them in an existing Kubernetes environment, reducing the risk of failed indexing before client demonstrations.',
       'Introduced token limits and bounded LLM-processing steps to prevent oversized requests from failing or delaying responses, improving response reliability and user-facing latency.',
       'Built internal FastAPI and Streamlit tools for query testing and result inspection, making retrieval behaviour and answer quality easier to evaluate.',
       'Documented and communicated the architecture and implementation changes, reducing knowledge concentration and enabling other engineers to contribute effectively.',
@@ -136,7 +136,7 @@ export const experience = [
     location: 'Vienna, Austria',
     highlights: [
       'Completed an intensive German program from B1 through Goethe-Zertifikat B2, establishing professional working proficiency for the Austrian market.',
-      'Built independent Django and data-engineering practice projects to keep engineering skills current alongside the program.',
+      'Built independent Django REST APIs and Python data-processing pipelines alongside the program to keep backend and data engineering skills current.',
     ],
   },
   {
@@ -152,12 +152,12 @@ export const experience = [
     ],
   },
   {
-    title: 'Software Engineer',
+    title: 'Software Engineer / Team Lead',
     organization: 'Huawei',
     date: 'Aug 2021 - Aug 2023',
     location: 'Budapest, Hungary',
     highlights: [
-      'Led the engineering team, coordinating priorities, reviewing implementations, and aligning delivery with stakeholder requirements.',
+      'Led an engineering team, coordinating priorities, reviewing implementations, and aligning delivery with stakeholder requirements.',
       'Designed and built a compatibility-focused development workflow that allowed engineers to continue working efficiently during the transition to a new security platform.',
       'Reduced platform-specific save, compilation, and integration issues before code reached the target environment, limiting rework and helping restore delivery timelines from approximately two to three months to one to two weeks.',
       'Made architectural decisions around APIs, data models, integrations, and the migration of backend services from Windows to Linux.',
@@ -362,6 +362,7 @@ export const skills = [
     icon: 'fas fa-cloud',
     items: [
       'Docker',
+      'Kubernetes',
       'Azure Container Apps',
       'GitHub Actions CI/CD',
       'Linux',
@@ -383,7 +384,7 @@ export const education = {
 export const languages = [
   {
     name: 'German',
-    level: 'Professional working proficiency, B2 completed, C1 in progress',
+    level: 'Professional working proficiency, Goethe-Zertifikat B2, C1 course in progress',
     progress: 80,
   },
   {

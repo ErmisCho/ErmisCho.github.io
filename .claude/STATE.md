@@ -1,51 +1,51 @@
 ---
 schema-version: 1
 session-type: deep
-branch: feat/project-execution-previews
-issues: []
-started_at: 2026-08-05T08:55:12Z
+branch: feat/cv-v1.5-sync
+issues: [12, 14]
+started_at: 2026-08-25T13:45:00+02:00
 status: completed
 current-wave: 5
 total-waves: 5
-updated: 2026-08-05T09:26:03.809Z
-session: feat-project-execution-previews-2026-08-05-0855
-session-start-ref: 27ac51c270f143bcf600fbdf5184f9b98ab7f044
+updated: 2026-08-25T12:47:00Z
+session: feat-cv-v1.5-sync-2026-08-25-1345
+session-start-ref: e6c5530
 ---
 
 ## Current Wave
 
-Session completed.
+Session completed. Issue #12 remains open for PR review, merge, and deployment; issue #14 is closed.
 
 ## Wave History
 
 ### Wave 1 — Discovery
-- Agent "Campaign capture audit": done — 0 files changed — OpenAPI, summary, and entity endpoints verified against synthetic processed data.
-- Agent "CRM evidence audit": done — 0 files changed — retained benchmark CSV and bounded chart claims verified.
-- Agent "Agentic RAG media audit": done — 0 files changed — repository graph matches portfolio asset; README is empty.
+- Compared English and German base CV v1.5 against the portfolio and live LinkedIn profiles.
+- Verified the release PDFs were older than the local v1.5 PDFs.
+- Installed and validated a visible Windows browser-automation skill; its production dependency audit reports zero vulnerabilities.
 
 ### Wave 2 — Impl-Core
-- Agent "Campaign workflow media": done — 3 files changed — actual FastAPI/OpenAPI MP4 and README GIF created from synthetic data.
-- Agent "CRM benchmark chart": done — 2 files changed — 1280×720 chart generated directly from retained CSV and documented.
-- Agent "Agentic RAG README": done — 1 file changed — existing exported workflow graph documented with bounded claims.
+- Updated the English and German portfolio positioning, experience, skills, language details, and changelog.
+- Applied the v1.5 headline, About, and five changed experience entries to both LinkedIn profile languages.
 
 ### Wave 3 — Impl-Polish
-- Agent "Portfolio media integration": done — 3 files changed — Campaign MP4 and CRM chart integrated with accessible labels and intrinsic dimensions.
+- Reopened and verified every localized LinkedIn editor; corrected the German headline and Huawei title persistence paths.
+- Measured 30 LinkedIn skills and retained the already-aligned top five instead of applying the stale 88-skill trim premise.
+- Replaced both public `cv` release assets with the v1.5 PDFs.
 
 ### Wave 4 — Quality
-- Agent "Repository media validation": done — 0 files changed — Campaign 29 tests passed; all README media renders and CRM values verified.
-- Agent "Portfolio quality and visual review": done — 0 files changed — Full Gate passed; desktop/mobile cards have stable dimensions and no overflow.
+- TypeScript, Astro build, and whitespace checks passed.
+- Downloaded release PDFs matched the local v1.5 SHA-256 digests.
+- LinkedIn bilingual audit passed for both headlines, both About sections, and all five changed roles.
+- Uploaded all six pinned-repository preview cards and verified exact bytes at GitHub's S3 origin; GitHub's public repository-image CDN still returns 404.
 
 ### Wave 5 — Finalization
-- Agent "Campaign documentation correction": done — 1 file changed — CI badge now targets the actual repository slug.
-- Agent "Portfolio release notes": done — 1 file changed — preview additions recorded under Unreleased.
-- Agent "Repository preparation": done — 0 files changed — task-owned files identified; commits deferred to `/close`.
+- Added issues #12–#16 to GitHub Project #1 with current statuses and closed completed issue #14.
+- Updated issues #12 and #13 with verification evidence and remaining blockers.
+- Corrected the local browser skill's Windows profile-copy guidance and exclusions.
 
 ## Deviations
 
-- [2026-08-05T08:57:00Z] Wave 1: Executed sequentially because Pi exposes no subagent dispatch tool; scope and checkpoints remain unchanged.
-- [2026-08-05T08:57:00Z] Wave 1: `.orchestrator/policy/blocked-commands.json` is absent; used the legacy command blocklist.
-- [2026-08-05T09:12:00Z] Wave 2: Campaign entity response uses a capture-only formatted view populated from the live filtered FastAPI endpoint because Swagger input automation was unreliable; recorded values remain the actual API response.
-- [2026-08-05T09:12:00Z] Wave 2: Session-reviewer dispatch deferred because Pi exposes no subagent tool; direct media and diff validation passed.
-- [2026-08-05T09:16:00Z] Wave 3: Session-reviewer dispatch deferred because Pi exposes no subagent tool; TypeScript and local Astro integration checks passed.
-- [2026-08-05T09:22:00Z] Wave 4: Direct review found the Campaign README CI badge references the old repository slug; corrected in Finalization.
-- [2026-08-05T09:25:00Z] Wave 5: Commits and pushes deferred to session-end per wave-executor ownership rules.
+- Pi exposes no subagent dispatch tool, so all five approved waves ran sequentially with direct verification.
+- GitHub Project access was granted during finalization and the pending board insertion was completed.
+- PR #11 still requires an external approval and cannot be merged in this session.
+- Fresh GitHub social-preview uploads reproduce an upstream CDN 404 despite byte-identical, HTTP-200 S3 objects; issue #13 remains blocked.
