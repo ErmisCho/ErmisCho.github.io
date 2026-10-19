@@ -1,0 +1,17 @@
+{
+  "client_id": "https://ermischo.github.io/oauth-client-metadata.json",
+  "client_name": "AMOLED Agenda",
+  "client_uri": "https://ermischo.github.io/",
+  "redirect_uris": [
+    "https://ermischo.github.io/oauth/callback"
+  ],
+  "token_endpoint_auth_method": "none",
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "scope": "data:read"
+}

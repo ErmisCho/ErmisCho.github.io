@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ermischo.amoledagenda",
+      "sha256_cert_fingerprints": [
+        "D9:E4:27:E2:55:4F:84:E6:C6:A8:B2:F8:46:9C:FD:F8:39:11:02:12:C0:9D:5E:98:1C:20:E4:A5:92:FF:77:54"
+      ]
+    }
+  }
+]
