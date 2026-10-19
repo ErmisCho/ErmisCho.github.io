@@ -108,7 +108,7 @@ export const experience = [
     date: 'Oct 2025 - Present',
     location: 'Vienna, Austria',
     highlights: [
-      'Built and deployed an ongoing private multi-service logistics platform with TypeScript, PostgreSQL, Django/FastAPI, Docker, and Azure, and demonstrated initial workflows to prospective clients.',
+      'Built and deployed a private multi-service logistics platform with TypeScript, PostgreSQL, Django/FastAPI, Docker, and Azure, and demonstrated initial workflows to prospective clients.',
       'Owned the platform architecture end to end, including tenant-aware access, automated tests, CI/CD, and guarded AI-service delivery.',
       'Developed independent software and AI systems, including a custom Django webshop and Wagtail CMS developed from external stakeholder requirements, owning architecture, implementation, testing, and deployment preparation.',
       'Built and deployed additional backend and AI projects using Python, FastAPI, Django, React, PostgreSQL, Docker, and Azure, with responsibility for technical decisions and reliable delivery.',
@@ -178,6 +178,21 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: 'Private Logistics Operations Platform',
+    tags: ['TypeScript', 'React', 'PostgreSQL', 'FastAPI', 'Docker', 'Azure'],
+    highlights: [
+      'Built and deployed a multi-service freight platform covering transport planning, quotations, haulier coordination, tracking, and email workflows, and demonstrated it to prospective clients.',
+      'Separated the TypeScript product from a Python AI negotiation service with price caps, human approval, and an append-only decision log enforced in code rather than in the prompt.',
+    ],
+    private: true,
+    alternateHref: 'https://www.spedanta.com',
+    alternateLabel: 'Live site',
+    previewVideo: '/previews/logistics-platform-demo.mp4',
+    previewWidth: 960,
+    previewHeight: 600,
+    previewAlt: 'Screen recording of the logistics platform with seed data, showing the transport plan, AI negotiation within a price cap, and draft approval',
+  },
   {
     title: 'SMS Spam Detection NLP',
     tags: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Docker', 'Azure'],

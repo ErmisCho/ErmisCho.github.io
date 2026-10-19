@@ -108,7 +108,7 @@ export const experience = [
     date: 'Okt 2025 - heute',
     location: 'Wien, Österreich',
     highlights: [
-      'Entwickelte und deployte eine laufende private Multi-Service-Logistikplattform mit TypeScript, PostgreSQL, Django/FastAPI, Docker und Azure und demonstrierte potenziellen Kunden erste Workflows.',
+      'Entwickelte und deployte eine private Multi-Service-Logistikplattform mit TypeScript, PostgreSQL, Django/FastAPI, Docker und Azure und demonstrierte potenziellen Kunden erste Workflows.',
       'Konzipierte und verantwortete die Plattformarchitektur durchgängig, einschließlich mandantenfähiger Zugriffskontrolle, automatisierter Tests, CI/CD und abgesicherter KI-Services.',
       'Entwickelte eigenständige Software- und KI-Systeme, darunter einen individuellen Django-Webshop und ein Wagtail-CMS nach Anforderungen eines externen Stakeholders, mit Verantwortung für Architektur, Implementierung, Tests und Deployment-Vorbereitung.',
       'Konzipierte und deployte weitere Backend- und KI-Projekte mit Python, FastAPI, Django, React, PostgreSQL, Docker und Azure und übernahm Verantwortung für technische Entscheidungen und zuverlässige Bereitstellung.',
@@ -178,6 +178,21 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: 'Private Logistik-Betriebsplattform',
+    tags: ['TypeScript', 'React', 'PostgreSQL', 'FastAPI', 'Docker', 'Azure'],
+    highlights: [
+      'Entwickelte und deployte eine Multi-Service-Frachtplattform für Transportplanung, Angebote, Frachtführer-Koordination, Tracking und E-Mail-Workflows und präsentierte sie potenziellen Kunden.',
+      'Trennte das TypeScript-Produkt von einem Python-KI-Verhandlungsdienst mit Preisobergrenzen, menschlicher Freigabe und einem unveränderlichen Entscheidungsprotokoll, die im Code statt im Prompt durchgesetzt werden.',
+    ],
+    private: true,
+    alternateHref: 'https://www.spedanta.com',
+    alternateLabel: 'Live-Website',
+    previewVideo: '/previews/logistics-platform-demo.mp4',
+    previewWidth: 960,
+    previewHeight: 600,
+    previewAlt: 'Bildschirmaufnahme der Logistikplattform mit Testdaten: Transportplan, KI-Verhandlung innerhalb der Preisobergrenze und Entwurfsfreigabe',
+  },
   {
     title: 'SMS Spam Detection NLP',
     tags: ['Python', 'scikit-learn', 'FastAPI', 'React', 'Docker', 'Azure'],
