@@ -283,16 +283,18 @@ export const honourableProjects = [
     previewAlt: 'LangGraph-Workflow-Diagramm mit Routing zwischen Vektorsuche und Websuche',
   },
   {
-    title: 'Chatdeck: ChatGPT Multi-Tab',
-    tags: ['Rust', 'Tauri', 'WebView2', 'Windows'],
+    title: 'ChatDeck: KI-Chat-Arbeitsplatz',
+    tags: ['Rust', 'Tauri', 'WebView2', 'Windows', 'macOS'],
     highlights: [
-      'Entwickelte eine Windows-Desktop-Shell für bis zu acht gleichzeitige ChatGPT-WebView2-Sitzungen mit gemeinsamer Anmeldung und Tastaturnavigation.',
-      'Ergänzte persistente Tab-Gruppen, verschieb- und größenveränderbare Split-Panes und portables Packaging ohne Nutzung oder Umgehung der OpenAI-API.',
+      'Entwickelte einen nativen Desktop-Arbeitsplatz, der ChatGPT, Claude und Terminal-Tabs in horizontal und vertikal geteilten Bereichen nebeneinanderstellt, mit einer Tab-Gruppe pro Projekt und Suche über alle Tabs.',
+      'Lieferte Installer für Windows und macOS (Apple Silicon und Intel) über GitHub Actions aus, mit In-App-Updater unter Windows, ohne Nutzung oder Umgehung der OpenAI- oder Anthropic-API.',
     ],
     href: 'https://github.com/ErmisCho/chatdeck',
     private: true,
+    alternateHref: 'https://ermischo.github.io/chatdeck-releases/',
+    alternateLabel: 'Website',
     preview: chatdeckPreview,
-    previewAlt: 'Chatdeck-Desktopfenster mit zwei nebeneinanderliegenden ChatGPT-WebView-Bereichen für Recherche und Bewerbungen',
+    previewAlt: 'ChatDeck-Fenster mit einer ChatGPT-Antwort in einem Bereich und einem zweiten Chat mit einem Farbvorschlag im anderen',
   },
   {
     title: 'AI Interview Coach DACH',
